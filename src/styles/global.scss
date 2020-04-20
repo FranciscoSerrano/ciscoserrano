@@ -1,0 +1,27 @@
+// @import url(""); // Import custom fonts here
+
+*:focus {
+  outline: none;
+}
+
+.container {
+  padding: 0 7.5%;
+
+  @media (min-width: 768px) {
+    padding: 0 10%;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 12%;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0 15%;
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
