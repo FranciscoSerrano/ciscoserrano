@@ -1,14 +1,27 @@
-import React from "react"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import React, { Component } from "react"
+import styled from "styled-components"
 
+// Import any Components
+import SEO from "../components/seo" // SEO is only necessary for rendered pages
+import Buttons from "../components/buttons"
+import Hero from "../components/hero"
+
+// Import all Stylesheets
+import "../styles/layout.css"
+import "../styles/colors.css"
 import "../styles/global.scss"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="" />
-    <h1>test</h1>
-  </Layout>
-)
+const Layout = styled.main``
 
-export default IndexPage
+export default class index extends Component {
+  render() {
+    return (
+      <Layout>
+        <SEO title="Francisco Serrano" />
+        <Buttons>
+        </Buttons>
+        <Hero />
+      </Layout>
+    )
+  }
+}
