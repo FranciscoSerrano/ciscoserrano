@@ -8,7 +8,8 @@ import "../styles/global.scss"
 
 // Import any Components
 import SEO from "../components/seo" // SEO is only necessary for rendered pages
-import ThemeSwticher from "../components/themeSwitcher"
+import Moon from "../components/theme-switcher/moon"
+import Sun from "../components/theme-switcher/sun"
 import Buttons from "../components/buttons"
 import Hero from "../components/hero"
 
@@ -27,6 +28,16 @@ const Layout = styled.main`
       color: var(--black);
     }
   }
+
+  .toggle-swtich {
+    > :nth-child(1) {
+      display: none;
+    }
+
+    > :nth-child(2) {
+      display: block;
+    }
+  }
 `
 
 export default class index extends Component {
@@ -38,9 +49,10 @@ export default class index extends Component {
     return (
       <Layout className={this.state.dark ? "dark-mode" : "light-mode"}>
         <SEO title="Francisco Serrano" />
-        <Buttons>
-          <div onClick={() => this.setState({ dark: !this.state.dark })}>
-            <ThemeSwticher />
+        <Buttons className="buttons">
+          <div className="toggle-swtich" onClick={() => this.setState({ dark: !this.state.dark })}>
+            <Moon className={this.state.dark ? "hidden" : "visible"} />
+            <Sun className={this.state.dark ? "visible" : "hidden"} />
           </div>
         </Buttons>
         <Hero />
