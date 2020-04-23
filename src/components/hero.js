@@ -6,7 +6,6 @@ import "../styles/colors.css"
 import "../styles/global.scss"
 
 const Hero = styled.section`
-  height: 2000px;
   padding-top: 80px;
 
   h1 {
