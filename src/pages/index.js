@@ -12,6 +12,7 @@ import Moon from "../components/theme-switcher/moon"
 import Sun from "../components/theme-switcher/sun"
 import Buttons from "../components/buttons"
 import Hero from "../components/hero"
+import Resume from "../components/resume/resume"
 
 const Layout = styled.main`
   &.dark-mode {
@@ -56,6 +57,7 @@ export default class index extends Component {
           </div>
         </Buttons>
         <Hero />
+        <Resume />
       </Layout>
     )
   }
