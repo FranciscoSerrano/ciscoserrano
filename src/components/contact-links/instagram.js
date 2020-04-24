@@ -1,22 +1,20 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 
+import icon from "../../images/icons/instagram.svg"
+
 // Import desired stylesheets
 import "../../styles/colors.css"
 import "../../styles/global.scss"
 
-// Import relevant components
-import icon from "../../images/icons/moon.svg"
-
-const Moon = styled.svg`
-  background-color: var(--black);
+const Instagram = styled.svg`
   -webkit-mask: url(${(props) => props.src}) no-repeat center;
   mask: url(${(props) => props.src}) no-repeat center;
   cursor: pointer;
 `
 
-export default class moon extends Component {
+export default class instagram extends Component {
   render() {
-    return <Moon src={icon} className="icon" />
+    return <Instagram src={icon} className="icon" />
   }
 }
