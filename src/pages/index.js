@@ -6,7 +6,7 @@ import "../styles/layout.css"
 import "../styles/colors.css"
 import "../styles/global.scss"
 
-// Import any Components
+// Import components
 import SEO from "../components/seo" // SEO is only necessary for rendered pages
 import ButtonsWrapper from "../components/buttonsWrapper"
 import { Sun, Moon } from "../components/theme-switcher/icons" // Import icons for theme-switcher
@@ -86,59 +86,44 @@ const Layout = styled.main`
 `
 
 export default class index extends Component {
-  state = {
-    dark: false,
+  constructor() {
+    super()
+    this.state = {
+      theme: "",
+    }
+  }
+
+  changeTheme() {
+    if (this.state.theme === "dark") {
+      this.setState({ theme: "light" })
+      localStorage.setItem("theme", "light")
+    } else {
+      this.setState({ theme: "dark" })
+      localStorage.setItem("theme", "dark")
+    }
+  }
+
+  componentDidMount() {
+    this.setState({ theme: localStorage.theme })
   }
 
   render() {
     return (
-      <Layout className={this.state.dark ? "dark-mode" : "light-mode"}>
+      <Layout
+        className={this.state.theme === "dark" ? "dark-mode" : "light-mode"}
+      >
         <SEO title="Francisco Serrano" />
         <ButtonsWrapper className="buttons">
           <div
             className="toggle-switcher"
-            onClick={() => this.setState({ dark: !this.state.dark })}
+            onClick={this.changeTheme.bind(this)}
           >
-            <Moon className={this.state.dark ? "hidden" : "visible"} />
-            <Sun className={this.state.dark ? "visible" : "hidden"} />
-          </div>
-          <div className="contact-links">
-            {/* Email */}
-            <a
-              href="mailto:email@email.com?subject=Hello!"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Email"
-            >
-              <Envelope />
-            </a>
-            {/* LinkedIn */}
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <LinkedIn />
-            </a>
-            {/* GitHub */}
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <GitHub />
-            </a>
-            {/* Instagram */}
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <Instagram />
-            </a>
+            <Moon
+              className={this.state.theme === "light" ? "visible" : "hidden"}
+            />
+            <Sun
+              className={this.state.theme === "dark" ? "visible" : "hidden"}
+            />
           </div>
         </ButtonsWrapper>
         <Hero />
