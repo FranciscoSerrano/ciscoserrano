@@ -33,10 +33,10 @@ const ButtonsWrapper = styled.div`
   }
 `
 
-const buttonsWrapper = ({ children }) => {
+const buttonsWrapper = (props) => {
   return (
     <ButtonsWrapper className="container">
-      {children}
+      {props.children}
       <ContactLinks />
     </ButtonsWrapper>
   )
