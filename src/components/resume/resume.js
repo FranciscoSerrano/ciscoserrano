@@ -35,17 +35,26 @@ const resume = () => {
           <ExperienceItem
             title="Genuis - Apple, Inc"
             subTitle="August 2019 – Current"
-            description="Support customers with hardware & software, repair iPhones, and mentor technicians."
+            description="The Genius performs hands-on repairs of desktop and mobile devices. They also provide critical frontline customer support, 
+            creates experience that promote excitement about Mac ownership, and build long-term relationships with Apple customers. 
+            The Genius shares his or her technical expertise with all their customers, regardless of the customer’s level of expertise. 
+            Additionally, the Genius supports the development of teammembers through mentoring and knowledge-sharing."
           />
           <ExperienceItem
             title="Technical Expert - Apple, Inc"
             subTitle="January 2016 – August 2019"
-            description="Assisted customers in troubleshooting their hardware and software and managed the appointment system."
+            description="The Technical Specialist offers technical support and skilled troubleshooting for all customers while also generating 
+            excitement for our products and services. The Technical Specialist delivers exceptional service and ensures customers are empowered to 
+            get the most out of their Apple products and services. In addition, the Technical Specialist ensures customers are educated about all 
+            available ownership options."
           />
           <ExperienceItem
             title="Product Specialist - Apple, Inc"
             subTitle="Nov 2015 – January 2016"
-            description="Provide customized solutions based on each customerʼs specific needs, including business, education, and creative professionals."
+            description="The Specialist builds brand loyalty and creates owners of Apple products. The Specialist is approachable and curious, 
+            and engages customers before, during, and after a purchase. They ask questions and actively listen to our customers’ needs in order 
+            to demonstrate how Apple can enrich their lives. The Specialist is dedicated to delivering a customer service experience that is 
+            unlike any other."
           />
            <ExperienceItem
             title="iOS Developer Intern - DS Media Labs"
@@ -55,8 +64,12 @@ const resume = () => {
         </Experience>
         <Experience>
           <h2>education</h2>
-          <ExperienceItem title="Associates Degree General Studies" subTitle="Valencia College" />
-          <ExperienceItem title="Bachelor of Science Mathematics" subTitle="University of Central Florida" />
+          <ExperienceItem title="Bachelor of Science: Mathematics" subTitle="University of Central Florida" />
+          <ExperienceItem title="Associates Degree: General Studies" subTitle="Valencia College" />
+          <ExperienceItem title="Apple ACIT Certified" subTitle="Mobile Device Repair" />
+          <ExperienceItem title="Apple ACMT Certified" subTitle="Mac Repair" />
+          <ExperienceItem title="Jamf Professional Certified" subTitle="MDM Software Solutions" />
+          
         </Experience>
       </LeftColumn>
 
