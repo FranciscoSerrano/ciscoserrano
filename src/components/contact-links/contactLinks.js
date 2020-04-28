@@ -42,7 +42,7 @@ const contactLinks = () => {
       </a>
       {/* LinkedIn */}
       <a
-        href="https://www.linkedin.com/ciscoserrano"
+        href="https://www.linkedin.com/in/ciscoserrano/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
