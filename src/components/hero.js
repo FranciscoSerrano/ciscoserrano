@@ -26,10 +26,15 @@ const hero = () => {
         Serrano
       </h1>
       <h5>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla velit
-        nisl neque turpis luctus interdum est. Lacus, ante pharetra eget auctor
-        in elementum massa venenatis. Nunc aenean orci posuere faucibus
-        vestibulum ut id netus. Metus enim, cursus tincidunt nulla.
+        Hello, I'm Francisco! I'm a mathematician interested in solving meaningful problems 
+        that make the world a better place. At heart, I'm a relentless optimist. 
+
+        In my free time I enjoy reading, building small machines, tinkering with software,  
+        learn obscure skills (right now it's magic), facilitate meandering philosophical 
+        conversations, debate, take pictures, draw, and dabble with 3D.
+
+        Connect with me if you'd like to learn more. 
+      
       </h5>
     </Hero>
   )

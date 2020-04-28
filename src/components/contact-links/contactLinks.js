@@ -33,7 +33,7 @@ const contactLinks = () => {
     <ContactLinks className="contact-links">
       {/* Email */}
       <a
-        href="mailto:email@email.com?subject=Hello!"
+        href="mailto:hello@ciscoserrano.com?subject=Hello!"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Email"
@@ -42,7 +42,7 @@ const contactLinks = () => {
       </a>
       {/* LinkedIn */}
       <a
-        href="https://www.linkedin.com/"
+        href="https://www.linkedin.com/ciscoserrano"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
@@ -51,7 +51,7 @@ const contactLinks = () => {
       </a>
       {/* GitHub */}
       <a
-        href="apple.com"
+        href="https://github.com/FranciscoSerrano"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
@@ -60,7 +60,7 @@ const contactLinks = () => {
       </a>
       {/* Instagram */}
       <a
-        href="apple.com"
+        href="https://www.instagram.com/ciscoserrano"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
