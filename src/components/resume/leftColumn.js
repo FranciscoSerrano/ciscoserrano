@@ -12,7 +12,7 @@ const LeftColumn = styled.div`
   flex-direction: column;
 `
 
-const leftColumn = ({ children }, props, title, subTitle, description) => {
+const leftColumn = (props, title, subTitle, description) => {
   return (
     <LeftColumn
       className="col-9"
@@ -20,7 +20,7 @@ const leftColumn = ({ children }, props, title, subTitle, description) => {
       subTitle={subTitle}
       description={description}
     >
-      {children}
+      {props.children}
     </LeftColumn>
   )
 }

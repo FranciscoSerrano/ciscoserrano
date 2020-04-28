@@ -9,8 +9,8 @@ import "../../../styles/global.scss"
 
 const Experience = styled.div``
 
-const experience = ({ children }, props) => {
-  return <Experience>{children}</Experience>
+const experience = (props) => {
+  return <Experience>{props.children}</Experience>
 }
 
 export default experience

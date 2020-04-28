@@ -15,6 +15,7 @@ const experienceItem = (props) => {
       <h3>{props.title}</h3>
       <h4>{props.subTitle}</h4>
       <p>{props.description}</p>
+      <ul>{props.children}</ul>
     </ExperienceItem>
   )
 }

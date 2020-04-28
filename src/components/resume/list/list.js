@@ -9,8 +9,8 @@ import "../../../styles/global.scss"
 
 const List = styled.div``
 
-const list = ({ children }, props) => {
-  return <List>{children}</List>
+const list = (props) => {
+  return <List>{props.children}</List>
 }
 
 export default list
