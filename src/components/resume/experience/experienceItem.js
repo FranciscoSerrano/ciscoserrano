@@ -7,7 +7,15 @@ import styled from "styled-components"
 import "../../../styles/colors.css"
 import "../../../styles/global.scss"
 
-const ExperienceItem = styled.div``
+const ExperienceItem = styled.div`
+  &:nth-child(n) {
+    margin-bottom: 40px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`
 
 const experienceItem = (props) => {
   return (

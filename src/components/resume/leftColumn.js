@@ -10,6 +10,9 @@ import "../../styles/global.scss"
 const LeftColumn = styled.div`
   display: flex;
   flex-direction: column;
+  border-right: 2px solid var(--grayLight);
+  padding-right: 160px;
+  margin-right: 80px;
 `
 
 const leftColumn = (props, title, subTitle, description) => {

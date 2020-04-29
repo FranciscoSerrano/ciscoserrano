@@ -15,15 +15,14 @@ import "../../styles/global.scss"
 
 const Resume = styled.section`
   display: flex;
+  padding-top: 80px;
 `
 
 const resume = () => {
   return (
     <Resume className="container">
       <LeftColumn>
-        <Experience>
-          <h2>experience</h2>
-
+        <Experience sectionTitle="experience">
           <ExperienceItem
             title="Analytical Chemistry Intern - Apple, Inc"
             subTitle="Jan 2019 – June 2019"
@@ -69,8 +68,7 @@ const resume = () => {
           />
         </Experience>
 
-        <Experience>
-          <h2>education</h2>
+        <Experience sectionTitle="education">
           <ExperienceItem title="Bachelor of Science: Mathematics" subTitle="University of Central Florida" />
           <ExperienceItem title="Associates Degree: General Studies" subTitle="Valencia College" />
           <ExperienceItem title="Apple ACIT Certified" subTitle="Mobile Device Repair" />
@@ -80,8 +78,7 @@ const resume = () => {
       </LeftColumn>
 
       <RightColumn>
-        <List>
-          <h2>skills</h2>
+        <List sectionTitle="skills">
           <ListItem text="macOS"/>
           <ListItem text="iOS"/>
           <ListItem text="Troubleshooting"/>
@@ -89,8 +86,7 @@ const resume = () => {
           <ListItem text="Python"/>
           <ListItem text="Bash"/>
         </List>
-        <List>
-          <h2>tools</h2>
+        <List sectionTitle="tools">
           <ListItem text="VS Code"/>
           <ListItem text="XCode"/>
           <ListItem text="Terminal"/>
