@@ -7,7 +7,17 @@ import styled from "styled-components"
 import "../../../styles/colors.css"
 import "../../../styles/global.scss"
 
-const ListItem = styled.li``
+const ListItem = styled.li`
+  list-style: none;
+
+  &:nth-child(n) {
+    margin-bottom: 4px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`
 
 const listItem = (props) => {
   return <ListItem>{props.text}</ListItem>

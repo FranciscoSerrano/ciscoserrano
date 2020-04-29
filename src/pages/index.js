@@ -44,7 +44,12 @@ const Layout = styled.main`
       }
     }
 
-    * {
+    h1,
+    h2,
+    h3,
+    h5,
+    p,
+    li {
       color: var(--white);
     }
   }
@@ -77,10 +82,6 @@ const Layout = styled.main`
           background-color: var(--black);
         }
       }
-    }
-
-    * {
-      color: var(--black);
     }
   }
 `
