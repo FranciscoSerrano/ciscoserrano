@@ -16,6 +16,7 @@ const experienceItem = (props) => {
     <ExperienceItem>
       <h3>{props.title}</h3>
       <h4>{props.subTitle}</h4>
+      <h4>{props.dateRange}</h4>
       <p>{props.description}</p>
       <ul>{props.children}</ul>
     </ExperienceItem>

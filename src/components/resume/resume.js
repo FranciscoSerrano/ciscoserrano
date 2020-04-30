@@ -13,9 +13,28 @@ const Resume = styled.section`
   display: block;
   padding-top: 80px;
 
-const Resume = styled.section`
-  display: flex;
-  padding-top: 80px;
+  .divider {
+    display: none;
+    height: auto;
+    width: 2px;
+    background-color: var(--grayLight);
+
+    @media (min-width: 1024px) {
+      display: block;
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+
+    @media (min-width: 1280px) {
+      display: block;
+      margin-left: 160px;
+      margin-right: 80px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
 `
 
 const resume = () => {

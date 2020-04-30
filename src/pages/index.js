@@ -53,6 +53,14 @@ const Layout = styled.main`
     li {
       color: var(--white);
     }
+
+    h4 {
+      color: var(--grayDark);
+    }
+
+    .divider {
+      background-color: var(--grayDark);
+    }
   }
 
   ${"" /* Light Mode styles */}
