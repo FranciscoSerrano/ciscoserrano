@@ -29,7 +29,8 @@ const resume = () => {
             description="Part of the Environmental Technologies group within Apple, I collaborated on design and development for products through the following:"
           >
             <li>Perform material testing on development products</li>
-            <li>Disassemble products and extract materials for chemical analysis • Operate laboratory instruments (XRF, IC, LIBS)</li>
+            <li>Disassemble products and extract materials for chemical analysis</li>
+            <li>Operate laboratory instruments (XRF, IC, LIBS)</li>
             <li>Use and improve workflow management tool (python)</li>
             <li>Collaborate with experts to collect documentation and quality control</li>
           </ExperienceItem>
