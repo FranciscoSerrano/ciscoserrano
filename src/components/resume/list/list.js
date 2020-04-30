@@ -1,16 +1,35 @@
 import React from "react"
 import styled from "styled-components"
 
-// Import relevant components
+const List = styled.div`
+  &:first-child {
+    padding-top: 16px;
+    margin-bottom: 80px;
+  }
 
-// Import desired stylesheets
-import "../../../styles/colors.css"
-import "../../../styles/global.scss"
+  span {
+    position: relative;
+    width: 16px;
+    left: -16px;
+    margin-left: -16px;
+    color: var(--green);
+  }
 
-const List = styled.div``
+  h2 {
+    margin-bottom: 16px;
+  }
+`
 
-const list = ({ children }, props) => {
-  return <List>{children}</List>
+const list = (props) => {
+  return (
+    <List>
+      <h2>
+        <span>></span>
+        {props.sectionTitle}
+      </h2>
+      {props.children}
+    </List>
+  )
 }
 
 export default list

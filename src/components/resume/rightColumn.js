@@ -1,18 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 
-// Import relevant components
-
-// Import desired stylesheets
-import "../../styles/colors.css"
-import "../../styles/global.scss"
-
 const RightColumn = styled.div`
   display: flex;
   flex-direction: column;
+  padding-left: 7.5%;
+  padding-right: 10%;
+
+  @media (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `
 
-const rightColumn = ({ children }, props, title, subTitle, description) => {
+const rightColumn = (props, title, subTitle, description) => {
   return (
     <RightColumn
       className="col-3"
@@ -20,7 +21,7 @@ const rightColumn = ({ children }, props, title, subTitle, description) => {
       subTitle={subTitle}
       description={description}
     >
-      {children}
+      {props.children}
     </RightColumn>
   )
 }

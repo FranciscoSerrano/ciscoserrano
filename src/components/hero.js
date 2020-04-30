@@ -1,19 +1,27 @@
 import React from "react"
 import styled from "styled-components"
 
-// Import desired stylesheets
-import "../styles/colors.css"
-import "../styles/global.scss"
-
 const Hero = styled.section`
-  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
 
   h1 {
     margin-bottom: 40px;
   }
 
   h5 {
-    padding-right: 17.5%;
+    padding-right: 10%;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 80px;
+
+    h5 {
+      padding-right: 17.5%;
+      margin-bottom: 0;
+    }
   }
 `
 
@@ -26,10 +34,16 @@ const hero = () => {
         Serrano
       </h1>
       <h5>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla velit
-        nisl neque turpis luctus interdum est. Lacus, ante pharetra eget auctor
-        in elementum massa venenatis. Nunc aenean orci posuere faucibus
-        vestibulum ut id netus. Metus enim, cursus tincidunt nulla.
+        Hello, I'm Francisco! I'm a mathematician interested in solving
+        meaningful problems that make the world a better place.
+        <br />
+        <br />
+        In my free time I enjoy reading, building small machines, tinkering with
+        software, learn obscure skills, facilitate meandering philosophical
+        conversations, debate, take pictures, draw, and dabble with 3D.
+        <br />
+        <br />
+        Connect with me if you'd like to learn more.
       </h5>
     </Hero>
   )

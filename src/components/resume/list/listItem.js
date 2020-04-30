@@ -1,13 +1,17 @@
 import React from "react"
 import styled from "styled-components"
 
-// Import relevant components
+const ListItem = styled.li`
+  list-style: none;
 
-// Import desired stylesheets
-import "../../../styles/colors.css"
-import "../../../styles/global.scss"
+  &:nth-child(n) {
+    margin-bottom: 4px;
+  }
 
-const ListItem = styled.li``
+  &:last-child {
+    margin-bottom: 0;
+  }
+`
 
 const listItem = (props) => {
   return <ListItem>{props.text}</ListItem>
