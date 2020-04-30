@@ -12,6 +12,7 @@ import ButtonsWrapper from "../components/buttonsWrapper"
 import { Sun, Moon } from "../components/theme-switcher/icons" // Import icons for theme-switcher
 import Hero from "../components/hero"
 import Resume from "../components/resume/resume"
+import Footer from "../components/footer"
 
 const Layout = styled.main`
   ${"" /* Dark Mode styles */}
@@ -51,6 +52,14 @@ const Layout = styled.main`
     p,
     li {
       color: var(--white);
+    }
+
+    h4 {
+      color: var(--grayDark);
+    }
+
+    .divider {
+      background-color: var(--grayDark);
     }
   }
 
@@ -129,6 +138,7 @@ export default class index extends Component {
         </ButtonsWrapper>
         <Hero />
         <Resume />
+        <Footer />
       </Layout>
     )
   }
