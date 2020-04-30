@@ -1,10 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-// Import desired stylesheets
-import "../styles/colors.css"
-import "../styles/global.scss"
-
 const Footer = styled.footer`
   display: flex;
   padding-top: 80px;

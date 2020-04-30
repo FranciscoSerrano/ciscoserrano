@@ -1,12 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-// Import relevant components
-
-// Import desired stylesheets
-import "../../../styles/colors.css"
-import "../../../styles/global.scss"
-
 const ExperienceItem = styled.div`
   &:nth-child(n) {
     margin-bottom: 40px;

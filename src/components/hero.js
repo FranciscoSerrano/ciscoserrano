@@ -1,10 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-// Import desired stylesheets
-import "../styles/colors.css"
-import "../styles/global.scss"
-
 const Hero = styled.section`
   display: flex;
   flex-direction: column;

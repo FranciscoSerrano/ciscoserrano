@@ -9,9 +9,9 @@ import ExperienceItem from "./experience/experienceItem"
 import List from "./list/list"
 import ListItem from "./list/listItem"
 
-// Import desired stylesheets
-import "../../styles/colors.css"
-import "../../styles/global.scss"
+const Resume = styled.section`
+  display: block;
+  padding-top: 80px;
 
 const Resume = styled.section`
   display: flex;
