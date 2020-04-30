@@ -86,7 +86,7 @@ const resume = () => {
 
         <Experience sectionTitle="Education">
           <ExperienceItem title="Bachelor of Science: Mathematics" subTitle="University of Central Florida" />
-          <ExperienceItem title="Associates Degree: Liberal Studies" subTitle="Valencia College" />
+          <ExperienceItem title="Associates Degree: Liberal Arts" subTitle="Valencia College" />
           <ExperienceItem title="Apple ACIT Certified" subTitle="Mobile Device Repair" />
           <ExperienceItem title="Apple ACMT Certified" subTitle="Mac Repair" />
           <ExperienceItem title="Jamf Professional Certified" subTitle="MDM Software Solutions" />
