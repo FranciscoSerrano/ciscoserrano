@@ -33,12 +33,11 @@ const hero = () => {
       </h1>
       <h5>
         Hello, I'm Francisco! I'm a mathematician interested in solving
-        meaningful problems that make the world a better place. At heart, I'm a
-        relentless optimist.
+        meaningful problems that make the world a better place.
         <br />
         <br />
         In my free time I enjoy reading, building small machines, tinkering with
-        software, learn obscure skills (right now it's magic), facilitate
+        software, learn obscure skills, facilitate
         meandering philosophical conversations, debate, take pictures, draw, and
         dabble with 3D.
         <br />
