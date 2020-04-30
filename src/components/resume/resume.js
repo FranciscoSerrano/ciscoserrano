@@ -112,6 +112,8 @@ const resume = () => {
         </Experience>
       </LeftColumn>
 
+      <div className="divider"></div>
+
       <RightColumn>
         <List sectionTitle="Skills">
           <ListItem text="macOS"/>

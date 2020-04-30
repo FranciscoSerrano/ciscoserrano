@@ -6,10 +6,12 @@ const LeftColumn = styled.div`
   flex-direction: column;
   padding-left: 7.5%;
   padding-right: 10%;
+  margin-bottom: 80px;
 
   @media (min-width: 768px) {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 0;
   }
 `
 
