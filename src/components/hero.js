@@ -3,8 +3,12 @@ import styled from "styled-components"
 
 const Hero = styled.section`
   display: flex;
-  flex-direction: column;
   padding-top: 40px;
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
   h1 {
     margin-bottom: 40px;
@@ -25,26 +29,30 @@ const Hero = styled.section`
   }
 `
 
-const hero = () => {
+const hero = (props) => {
   return (
     <Hero className="container">
-      <h1>
-        Francisco
-        <br />
-        Serrano
-      </h1>
-      <h5>
-        Hello, I'm Francisco! I'm a mathematician interested in solving
-        meaningful problems that make the world a better place.
-        <br />
-        <br />
-        In my free time I enjoy reading, building small machines, tinkering with
-        software, learn obscure skills, facilitate meandering philosophical
-        conversations, debate, take pictures, draw, and dabble with 3D.
-        <br />
-        <br />
-        Connect with me if you'd like to learn more.
-      </h5>
+      <div className="contentWrapper">
+        <h1>
+          Francisco
+          <br />
+          Serrano
+        </h1>
+        <h5>
+          Hello, I'm Francisco! I'm a mathematician interested in solving
+          meaningful problems that make the world a better place.
+          <br />
+          <br />
+          In my free time I enjoy reading, building small machines, tinkering
+          with software, learn obscure skills, facilitate meandering
+          philosophical conversations, debate, take pictures, draw, and dabble
+          with 3D.
+          <br />
+          <br />
+          Connect with me if you'd like to learn more.
+        </h5>
+      </div>
+      {props.children}
     </Hero>
   )
 }

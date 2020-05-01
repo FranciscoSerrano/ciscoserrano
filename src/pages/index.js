@@ -15,6 +15,12 @@ import Resume from "../components/resume/resume"
 import Footer from "../components/footer"
 
 const Layout = styled.main`
+  .content-wrapper {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   ${"" /* Dark Mode styles */}
   &.dark-mode {
     background-color: var(--black);
@@ -119,26 +125,23 @@ export default class index extends Component {
 
   render() {
     return (
-      <Layout
-        className={this.state.theme === "dark" ? "dark-mode" : "light-mode"}
-      >
-        <SEO title="Francisco Serrano" />
-        <ButtonsWrapper className="buttons">
-          <div
-            className="toggle-switcher"
-            onClick={this.changeTheme.bind(this)}
-          >
-            <Moon
-              className={this.state.theme === "light" ? "visible" : "hidden"}
-            />
-            <Sun
-              className={this.state.theme === "dark" ? "visible" : "hidden"}
-            />
-          </div>
-        </ButtonsWrapper>
-        <Hero />
-        <Resume />
-        <Footer />
+      <Layout className={this.state.theme === "dark" ? "dark-mode" : "light-mode"} >
+        <div className="content-wrapper">
+          <SEO title="Francisco Serrano" />
+          <Hero>
+            <ButtonsWrapper className="buttons">
+              <div
+                className="toggle-switcher"
+                onClick={this.changeTheme.bind(this)}
+              >
+                <Moon className={this.state.theme === "light" ? "visible" : "hidden"} />
+                <Sun className={this.state.theme === "dark" ? "visible" : "hidden"} />
+              </div>
+            </ButtonsWrapper>
+          </Hero>
+          <Resume />
+          <Footer />
+        </div>
       </Layout>
     )
   }
