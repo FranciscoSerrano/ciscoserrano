@@ -69,13 +69,24 @@ const resume = () => {
 
           <ExperienceItem
             title="Technical Expert - Apple, Inc"
-            subTitle="January 2016 – August 2019"
-            description="The Technical Specialist offers technical support and skilled troubleshooting for all customers while also generating excitement for our products and services. The Technical Specialist delivers exceptional service and ensures customers are empowered to get the most out of their Apple products and services. In addition, the Technical Specialist ensures customers are educated about all available ownership options."
+            subTitle="March 2017 – August 2019"
+            description="The Technical Expert combines extensive functional troubleshooting skills with an ability to inspire excitement around ownership across the Apple ecosystem — with a focus on iPhone."
           >
             <li>Certified to repair iOS devices.</li>
             <li>Ability to listen and provide feedback and guidance to others.</li>
             <li>Ability to identify patterns based upon prior troubleshooting experience to diagnose symptoms and causes.</li>
             <li>Excellent verbal and written communications skills with ability to tailor communication and style to differing audiences.</li>
+          </ExperienceItem>
+
+          <ExperienceItem
+            title="Technical Specialist - Apple, Inc"
+            subTitle="January 2016 – March 2017"
+            description="The Technical Specialist offers technical support and skilled troubleshooting for all customers while also generating excitement for our products and services. The Technical Specialist delivers exceptional service and ensures customers are empowered to get the most out of their Apple products and services. In addition, the Technical Specialist ensures customers are educated about all available ownership options."
+          >
+            <li>Ability to analyze and solve technical problems.</li>
+            <li>Experience troubleshooting hardware and software issues in a customer service environment.</li>
+            <li>Strong interpersonal skills and experience navigating customer service issues with empathy. </li>
+            <li>Action-oriented and motivated to do what’s best for the customer and Apple, often anticipating and adjusting for problems and roadblocks.</li>
           </ExperienceItem>
 
           <ExperienceItem
