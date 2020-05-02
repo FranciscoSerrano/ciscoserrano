@@ -11,11 +11,10 @@ import ContactLinks from '../components/contact-links/contactLinks'
 const ButtonsWrapper = styled.div`
   position: fixed;
   right: 0;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-left: 40px;
   padding-right: 16px;
 
   .icon {
@@ -35,9 +34,17 @@ const ButtonsWrapper = styled.div`
   }
 
   @media (min-width: 1024px) {
-    padding-top: 80px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-right: 7.5%;
+  }
+
+  @media (min-width: 1280px) {
+    padding-right: 10%;
+  }
+
+  @media (min-width: 1600px) {
+    left: 50%;
+    padding-left: 600px;
+    padding-right: 0;
   }
 `
 
