@@ -119,6 +119,15 @@ export default class index extends Component {
     }
   }
 
+  handleBtnKeyDown(event) {
+    // Check to see if space or enter were pressed
+    if (event.key === " " || event.key === "Enter" || event.key === "Spacebar") {
+      // Prevent the default action to stop scrolling when space is pressed
+      event.preventDefault()
+      this.changeTheme(event.target)
+    }
+  }
+
   componentDidMount() {
     this.setState({ theme: localStorage.theme })
   }
@@ -133,6 +142,10 @@ export default class index extends Component {
               <div
                 className="toggle-switcher"
                 onClick={this.changeTheme.bind(this)}
+                onKeyDown={this.handleBtnKeyDown.bind(this)}
+                role="button"
+                tabIndex="0"
+                aria-pressed={this.state.theme === "dark" ? true : false}
               >
                 <Moon className={this.state.theme === "light" ? "visible" : "hidden"} />
                 <Sun className={this.state.theme === "dark" ? "visible" : "hidden"} />
