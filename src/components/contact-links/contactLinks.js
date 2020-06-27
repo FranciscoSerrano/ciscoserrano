@@ -17,7 +17,7 @@ const ContactLinks = styled.div`
 
     .icon {
       -webkit-transition: all 200ms ease-in-out;
-      -mox-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
       -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
     }
