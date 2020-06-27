@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import styled from "styled-components"
 
 // Import relevant components
@@ -37,35 +37,36 @@ const Resume = styled.section`
   }
 `
 
-const resume = () => {
-  return (
-    <Resume className="container">
-      <LeftColumn>
-        <Experience sectionTitle="Experience">
-          <ExperienceItem
-            title="Analytical Chemistry Intern - Apple, Inc"
-            subTitle="Jan 2019 – June 2019"
-            description="Part of the Environmental Technologies group within Apple, I collaborated on design and development for products through the following:"
-          >
-            <li>Perform material testing on development products</li>
-            <li>Disassemble products and extract materials for chemical analysis</li>
-            <li>Operate laboratory instruments (XRF, IC, LIBS)</li>
-            <li>Use and improve workflow management tool (python)</li>
-            <li>Collaborate with experts to collect documentation and quality control</li>
-          </ExperienceItem>
+export default class resume extends Component {
+  render() {
+    return (
+      <Resume className="container">
+        <LeftColumn>
+          <Experience sectionTitle="Experience">
+            <ExperienceItem
+              title="Analytical Chemistry Intern - Apple, Inc"
+              subTitle="Jan 2019 – June 2019"
+              description="Part of the Environmental Technologies group within Apple, I collaborated on design and development for products through the following:"
+            >
+              <li>Perform material testing on development products</li>
+              <li>Disassemble products and extract materials for chemical analysis</li>
+              <li>Operate laboratory instruments (XRF, IC, LIBS)</li>
+              <li>Use and improve workflow management tool (python)</li>
+              <li>Collaborate with experts to collect documentation and quality control</li>
+            </ExperienceItem>
 
-          <ExperienceItem
-            title="Genuis - Apple, Inc"
-            subTitle="August 2019 – Current"
-            description="The Genius performs hands-on repairs of desktop and mobile devices. They also provide critical frontline customer support, creates experience that promote excitement about Mac ownership, and build long-term relationships with Apple customers."
-          >
-            <li>Certified to troubleshoot, diagnose, and perform repairs of Macs, iOS devices, Apple TV, Apple Watch, Beats, AirPort, and other devices and their accompanying software.</li>
-            <li>Advanced level of troubleshooting hardware and software issues across a broad range of products and services in a customer service environment.</li>
-            <li>Ability to effectively engage in high level, self-directed time management and prioritization of workload.</li>
-            <li>Strong interpersonal skills and experience navigating customer service issues with empathy.</li>
-            <li>Ability to work in a fast-paced environment and make decisions quickly, sometimes under tight deadlines and pressure.</li>
-            <li>Proven success in team environments demonstrating shared responsibility and accountability with other team members.</li>
-          </ExperienceItem>
+            <ExperienceItem
+              title="Genuis - Apple, Inc"
+              subTitle="August 2019 – Current"
+              description="The Genius performs hands-on repairs of desktop and mobile devices. They also provide critical frontline customer support, creates experience that promote excitement about Mac ownership, and build long-term relationships with Apple customers."
+            >
+              <li>Certified to troubleshoot, diagnose, and perform repairs of Macs, iOS devices, Apple TV, Apple Watch, Beats, AirPort, and other devices and their accompanying software.</li>
+              <li>Advanced level of troubleshooting hardware and software issues across a broad range of products and services in a customer service environment.</li>
+              <li>Ability to effectively engage in high level, self-directed time management and prioritization of workload.</li>
+              <li>Strong interpersonal skills and experience navigating customer service issues with empathy.</li>
+              <li>Ability to work in a fast-paced environment and make decisions quickly, sometimes under tight deadlines and pressure.</li>
+              <li>Proven success in team environments demonstrating shared responsibility and accountability with other team members.</li>
+            </ExperienceItem>
 
           <ExperienceItem
             title="Technical Expert - Apple, Inc"
@@ -100,50 +101,49 @@ const resume = () => {
             <li>Decisive, even under tight deadlines and pressure.</li>
           </ExperienceItem>
 
-          <ExperienceItem
-            title="iOS Development Intern - DS Media Labs"
-            subTitle="May 2013 – January 2014"
-            description="Design and build applications for the iOS platform. Unit-test code for robustness, including edge cases, usability, & general reliability."
-          />
-        </Experience>
+            <ExperienceItem
+              title="iOS Development Intern - DS Media Labs"
+              subTitle="May 2013 – January 2014"
+              description="Design and build applications for the iOS platform. Unit-test code for robustness, including edge cases, usability, & general reliability."
+            />
+          </Experience>
 
-        <Experience sectionTitle="Education">
-          <ExperienceItem title="Bachelor of Science: Mathematics" subTitle="University of Central Florida" />
-          <ExperienceItem title="Associates Degree: Liberal Arts" subTitle="Valencia College" />
-          <ExperienceItem title="Apple ACIT Certified" subTitle="Mobile Device Repair" />
-          <ExperienceItem title="Apple ACMT Certified" subTitle="Mac Repair" />
-          <ExperienceItem title="Jamf Professional Certified" subTitle="MDM Software Solutions" />
-        </Experience>
-      </LeftColumn>
+          <Experience sectionTitle="Education">
+            <ExperienceItem title="Bachelor of Science: Mathematics" subTitle="University of Central Florida" />
+            <ExperienceItem title="Associates Degree: Liberal Arts" subTitle="Valencia College" />
+            <ExperienceItem title="Apple ACIT Certified" subTitle="Mobile Device Repair" />
+            <ExperienceItem title="Apple ACMT Certified" subTitle="Mac Repair" />
+            <ExperienceItem title="Jamf Professional Certified" subTitle="MDM Software Solutions" />
+          </Experience>
+        </LeftColumn>
 
-      <div className="divider"></div>
+        <div className="divider"></div>
 
-      <RightColumn>
-        <List sectionTitle="Skills">
-          <ListItem text="macOS" />
-          <ListItem text="iOS" />
-          <ListItem text="Troubleshooting" />
-          <ListItem text="Git & GitHub" />
-          <ListItem text="Python" />
-          <ListItem text="Bash" />
-        </List>
-        <List sectionTitle="Tools">
-          <ListItem text="VS Code" />
-          <ListItem text="XCode" />
-          <ListItem text="Final Cut" />
-          <ListItem text="Logic" />
-          <ListItem text="Keynote" />
-          <ListItem text="Terminal" />
-          <ListItem text="Jira" />
-          <ListItem text="Jamf MDM" />
-          <ListItem text="Affinity Photo" />
-          <ListItem text="Affinity Designer" />
-          <ListItem text="Affinity Publisher" />
-          <ListItem text="Pen & Paper" />
-        </List>
-      </RightColumn>
-    </Resume>
-  )
+        <RightColumn>
+          <List sectionTitle="Skills">
+            <ListItem text="macOS" />
+            <ListItem text="iOS" />
+            <ListItem text="Troubleshooting" />
+            <ListItem text="Git & GitHub" />
+            <ListItem text="Python" />
+            <ListItem text="Bash" />
+          </List>
+          <List sectionTitle="Tools">
+            <ListItem text="VS Code" />
+            <ListItem text="XCode" />
+            <ListItem text="Final Cut" />
+            <ListItem text="Logic" />
+            <ListItem text="Keynote" />
+            <ListItem text="Terminal" />
+            <ListItem text="Jira" />
+            <ListItem text="Jamf MDM" />
+            <ListItem text="Affinity Photo" />
+            <ListItem text="Affinity Designer" />
+            <ListItem text="Affinity Publisher" />
+            <ListItem text="Pen & Paper" />
+          </List>
+        </RightColumn>
+      </Resume>
+    )
+  }
 }
-
-export default resume
