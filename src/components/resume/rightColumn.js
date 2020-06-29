@@ -13,17 +13,8 @@ const RightColumn = styled.div`
   }
 `
 
-const rightColumn = (props, title, subTitle, description) => {
-  return (
-    <RightColumn
-      className="col-3"
-      title={title}
-      subTitle={subTitle}
-      description={description}
-    >
-      {props.children}
-    </RightColumn>
-  )
+const rightColumn = (props) => {
+  return <RightColumn className="col-3">{props.children}</RightColumn>
 }
 
 export default rightColumn

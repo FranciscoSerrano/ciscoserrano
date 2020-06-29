@@ -6,7 +6,7 @@ import "../styles/colors.css"
 import "../styles/global.scss"
 
 // Import relevant components
-import ContactLinks from '../components/contact-links/contactLinks'
+import ContactLinks from "../components/contact-links/contactLinks"
 
 const ButtonsWrapper = styled.div`
   position: fixed;
@@ -27,7 +27,7 @@ const ButtonsWrapper = styled.div`
 
     > :nth-child(n) {
       -webkit-transition: all 200ms ease-in-out;
-      -mox-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
       -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
     }

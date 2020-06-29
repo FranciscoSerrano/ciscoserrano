@@ -24,7 +24,7 @@ const list = (props) => {
   return (
     <List>
       <h2>
-        <span>></span>
+        <span>{">"}</span>
         {props.sectionTitle}
       </h2>
       {props.children}

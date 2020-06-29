@@ -15,18 +15,8 @@ const LeftColumn = styled.div`
   }
 `
 
-const leftColumn = (props, title, subTitle, dateRange, description) => {
-  return (
-    <LeftColumn
-      className="col-9"
-      title={title}
-      subTitle={subTitle}
-      dateRange={dateRange}
-      description={description}
-    >
-      {props.children}
-    </LeftColumn>
-  )
+const leftColumn = (props) => {
+  return <LeftColumn className="col-9">{props.children}</LeftColumn>
 }
 
 export default leftColumn
