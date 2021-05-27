@@ -43,15 +43,25 @@ export default class resume extends Component {
       <Resume className="container">
         <LeftColumn>
           <Experience sectionTitle="Experience">
+          <ExperienceItem
+              title="Software Engineer Intern - Apple, Inc"
+              subTitle="Jan 2021 – June 2021"
+              description="Part of the Weather Forecasting team within Apple, I collaborated on design and development for products through the following:"
+            >
+              <li>Developed server-side pipelines in Node.js to retrieve and process hundreds of thousands of weather station observations from a MySQL database to test hypotheses and understand trends in accuracy assessments for the Weather Forecasting team</li>
+              <li>Designed and implemented an in-house charting library backed by D3.js to visualize the results of my project as histograms, box-and-whisker plots, and calibration curves on the front-end</li>
+              <li>Extended an existing Express.js web application to display a dashboard of my results using the charting library I developed.</li>
+            </ExperienceItem>
+
             <ExperienceItem
               title="Analytical Chemistry Intern - Apple, Inc"
               subTitle="Jan 2019 – June 2019"
               description="Part of the Environmental Technologies group within Apple, I collaborated on design and development for products through the following:"
             >
-              <li>Perform material testing on development products</li>
-              <li>Disassemble products and extract materials for chemical analysis</li>
-              <li>Operate laboratory instruments (XRF, IC, LIBS)</li>
-              <li>Use and improve workflow management tool (python)</li>
+              <li>Designed and implemented a workflow management tool using Python and pandas that processed raw Yokogawa power meter data output in 86,000 line CSV files into a lightweight, one page, formatted Excel report. This automated the reporting which was done manually before and allowed us to increase our lab output.</li>
+              <li>Operated and programmed laboratory instruments for environmental testing: X-ray Fluorescence Spectrometer, Ion Chromatography, Laser Induced Breakdown Spectrometer.</li>
+              <li>Performed material testing on development products to ensure they meet environmental regulations across the United States, United Kingdom, and Canada.</li>
+              <li>Developed a hardware stress testing methodology for a last minute project with successful results.</li>
               <li>Collaborate with experts to collect documentation and quality control</li>
             </ExperienceItem>
 
@@ -60,12 +70,12 @@ export default class resume extends Component {
               subTitle="August 2019 – Current"
               description="The Genius performs hands-on repairs of desktop and mobile devices. They also provide critical frontline customer support, creates experience that promote excitement about Mac ownership, and build long-term relationships with Apple customers."
             >
-              <li>Certified to troubleshoot, diagnose, and perform repairs of Macs, iOS devices, Apple TV, Apple Watch, Beats, AirPort, and other devices and their accompanying software.</li>
-              <li>Advanced level of troubleshooting hardware and software issues across a broad range of products and services in a customer service environment.</li>
+              <li>Wrote a stress testing script using Python and Beautiful Soup to replicate intermittent shut down issues that customers say happen during heavy use of their computers. The script allowed for multitasking on the floor, increasing our appointment on-time percentage at the Genius Bar.</li>
+              <li>Submitted detailed bug reports to IS&T for our internal retail applications such as Mobile Genius and Concierge to improve the customer experience on the floor.</li>
               <li>Ability to effectively engage in high level, self-directed time management and prioritization of workload.</li>
               <li>Strong interpersonal skills and experience navigating customer service issues with empathy.</li>
               <li>Ability to work in a fast-paced environment and make decisions quickly, sometimes under tight deadlines and pressure.</li>
-              <li>Proven success in team environments demonstrating shared responsibility and accountability with other team members.</li>
+              <li>Authored technical training documentation for the Genius Bar used by three stores in the market.</li>
             </ExperienceItem>
 
           <ExperienceItem
@@ -121,12 +131,17 @@ export default class resume extends Component {
 
         <RightColumn>
           <List sectionTitle="Skills">
+            <ListItem text="JavaScipt" />
+            <ListItem text="HTML" />
+            <ListItem text="CSS" />
+            <ListItem text="Node.js" />
+            <ListItem text="Python" />
             <ListItem text="macOS" />
             <ListItem text="iOS" />
             <ListItem text="Troubleshooting" />
             <ListItem text="Git & GitHub" />
-            <ListItem text="Python" />
-            <ListItem text="Bash" />
+            <ListItem text="MySQL" />
+            <ListItem text="Command Line" />
           </List>
           <List sectionTitle="Tools">
             <ListItem text="VS Code" />
